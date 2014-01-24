@@ -16,10 +16,10 @@ Awesomesauce stuff to explain the project.
 Usage info stuff here
 
 ### TODO
-What all do we need to do?
-Someone needs to figure this out :)
-Smiley face!
-Poops McGee
++ What all do we need to do?
++ Someone needs to figure this out :)
++ Smiley face!
++ Poops McGee
 
 ## Authors
 
