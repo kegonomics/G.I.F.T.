@@ -16,16 +16,16 @@ Awesomesauce stuff to explain the project.
 Usage info stuff here
 
 ### TODO
-+ What all do we need to do?
-+ Someone needs to figure this out :)
-+ Smiley face!
-+ Poops McGee
+What all do we need to do?  
+Someone needs to figure this out :)  
+Smiley face!  
+Poops McGee  
 
 ## Authors
 
-**Alphabetical Order**
-**Loran Lewis**
-**Other Names Here**
+**Alphabetical Order**  
+**Loran Lewis**  
+**Other Names Here**  
 
 ## License
 We need to figure out what licensing we will be using!
