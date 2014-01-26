@@ -23,10 +23,8 @@ Poops McGee
 
 ## Authors
 
-**Alphabetical Order**  
 **Loran Lewis**  
 **Louis Sandoval**  
-**Other Names Here**  
 
 ## License
 We need to figure out what licensing we will be using!
