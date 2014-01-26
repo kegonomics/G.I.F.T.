@@ -24,8 +24,8 @@ Poops McGee
 ## Authors
 
 **Alphabetical Order**  
-**Loran Lewis**
-**Louis Sandoval**
+**Loran Lewis**  
+**Louis Sandoval**  
 **Other Names Here**  
 
 ## License
