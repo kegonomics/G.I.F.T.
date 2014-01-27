@@ -7,7 +7,7 @@ Awesomesauce stuff to explain the project.
 
 ### Prerequisites
 
-- OpenKinect ([http://openkinect.org/])
+- OpenKinect (http://openkinect.org/)
 
 ### Usage
 
