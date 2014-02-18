@@ -7,9 +7,7 @@ Awesomesauce stuff to explain the project.
 
 ### Prerequisites
 
-- List
-- of
-- Prerequisites
+- OpenKinect (http://openkinect.org/)
 
 ### Usage
 
@@ -23,10 +21,8 @@ Poops McGee
 
 ## Authors
 
-**Alphabetical Order**  
-**Loran Lewis**
-**Louis Sandoval**
-**Other Names Here**  
+**Loran Lewis**  
+**Louis Sandoval**  
 
 ## License
 We need to figure out what licensing we will be using!
