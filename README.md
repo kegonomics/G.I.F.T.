@@ -8,6 +8,9 @@ Awesomesauce stuff to explain the project.
 ### Prerequisites
 
 - OpenKinect (http://openkinect.org/)
+- Ruby
+- Ruby Gem: net-ssh
+- .NET Framework 4.0
 
 ### Usage
 
