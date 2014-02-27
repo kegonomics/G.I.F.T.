@@ -17,15 +17,19 @@ Awesomesauce stuff to explain the project.
 Usage info stuff here
 
 ### TODO
+
 What all do we need to do?  
 Someone needs to figure this out :)  
 Smiley face!  
-Poops McGee  
+Poops McGee
+Make things play nice...
 
 ## Authors
 
+**Jacob Nichols**
 **Loran Lewis**  
 **Louis Sandoval**  
 
 ## License
+
 We need to figure out what licensing we will be using!
