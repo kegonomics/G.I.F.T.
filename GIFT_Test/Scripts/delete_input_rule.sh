@@ -2,16 +2,8 @@
 
 # Script allows the deletion of an INPUT chain rule by line number
 
-# check for cli args
-if [ $1 ]; then
-	lineNumber=$1
-else
-	echo	
-	iptables -L INPUT --line-numbers -n 	# display INPUT chain rules	
-	echo
-	echo "Enter a line number to delete:"
-	read lineNumber 				# gets user input and stores it in "lineNumber"
-fi
+# set CLI argument as variable
+lineNumber=$1
 
 # deletes the rule at the given line
 iptables -D INPUT $lineNumber
