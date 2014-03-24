@@ -181,6 +181,9 @@ namespace Microsoft.Samples.Kinect.ControlsBasics
             //var selectionDisplay = new SelectionDisplay(button.Label as string);
             //this.kinectRegionGrid.Children.Add(selectionDisplay);
             e.Handled = true;
+
+            string arg = "";
+
             if (button.Label == "Add a Rule")
             {
                 //Run add rule script
@@ -188,6 +191,9 @@ namespace Microsoft.Samples.Kinect.ControlsBasics
             }
             else if(button.Label == "Delete a Rule")
             {
+                arg = " C:\\Users\\Standard Guy\\Documents\\GitHub\\G.I.F.T\\GIFT_Test\\Scripts\\delete_input_rule.sh 6";
+                new Thread(RunScript).Start(arg);
+
                 label1.Content = "Rule Deleted!";
             }
             else if(button.Label == "Edit a Rule")
@@ -196,7 +202,8 @@ namespace Microsoft.Samples.Kinect.ControlsBasics
             }
             else if(button.Label == "List Rules")
             {
-                new Thread(RunScript).Start();           
+                arg = " C:\\Users\\Standard Guy\\Documents\\GitHub\\G.I.F.T\\GIFT_Test\\Scripts\\show_all_rules.sh";
+                new Thread(RunScript).Start(arg);          
 
                 label1.Content = "Listed Rules";
             }
@@ -255,25 +262,11 @@ namespace Microsoft.Samples.Kinect.ControlsBasics
         /// <summary>
         /// Use to call each script and save data
         /// </summary>
-        void RunScript()
+        void RunScript(Object scriptToRun)
         {
-            // using (Process p = new Process())
-            // {
-            //    ProcessStartInfo info = new ProcessStartInfo("ruby C:\"" + script);
-            //    info.Arguments = "args"; // set args
-            //    info.RedirectStandardInput = true;
-            //    info.RedirectStandardOutput = true;
-            //    info.UseShellExecute = false;
-            //    p.StartInfo = info;
-            //    p.Start();
-            //    string output = p.StandardOutput.ReadToEnd();
-            //    return output;
-            //    process output to be added to text box
-            //
-            // }
-            
             // parameters - host, username, password, scriptToRun
-            ProcessStartInfo process = new ProcessStartInfo("ssh_pipe.rb", ""); // todo: fix this harcoded stuff
+            Console.WriteLine("Script to run: " + scriptToRun.ToString());
+            ProcessStartInfo process = new ProcessStartInfo("ssh_pipe.rb " , "10.0.0.20 gift passcode" + scriptToRun.ToString()); // todo: fix this harcoded stuff
             process.WindowStyle = ProcessWindowStyle.Hidden;
             Process watcher = Process.Start(process);
 

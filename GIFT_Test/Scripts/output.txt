@@ -1,0 +1,8 @@
+Chain INPUT (policy ACCEPT)
+num  target     prot opt source               destination         
+1    ACCEPT     all  --  0.0.0.0/0            0.0.0.0/0           
+2    ACCEPT     tcp  --  0.0.0.0/0            0.0.0.0/0            tcp dpt:22
+3    ACCEPT     tcp  --  0.0.0.0/0            0.0.0.0/0            tcp dpt:80
+4    ACCEPT     tcp  --  0.0.0.0/0            0.0.0.0/0            tcp dpt:443
+5    ACCEPT     icmp --  0.0.0.0/0            0.0.0.0/0           
+6    DROP       all  --  0.0.0.0/0            0.0.0.0/0           

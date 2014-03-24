@@ -100,9 +100,6 @@
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
     <AppDesigner Include="Properties\" />
-    <EmbeddedResource Include="ssh_pipe.rb">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </EmbeddedResource>
     <EmbeddedResource Include="Scripts\delete_forward_rule.sh" />
     <EmbeddedResource Include="Scripts\delete_input_rule.sh" />
     <EmbeddedResource Include="Scripts\delete_output_rule.sh" />
@@ -110,6 +107,9 @@
     <EmbeddedResource Include="Scripts\show_forward_rules.sh" />
     <EmbeddedResource Include="Scripts\show_input_rules.sh" />
     <EmbeddedResource Include="Scripts\show_output_rules.sh" />
+    <EmbeddedResource Include="Scripts\ssh_pipe.rb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Microsoft.Kinect.Toolkit.Controls\Microsoft.Kinect.Toolkit.Controls.csproj">

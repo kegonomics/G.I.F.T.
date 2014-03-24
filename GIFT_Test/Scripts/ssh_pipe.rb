@@ -5,12 +5,9 @@ require 'net/ssh'
 @hostname = ARGV[0] # "10.0.0.20"
 @username = ARGV[1]
 @password = ARGV[2]
-@scriptPath = ARGV[3] || "C:\\Users\\Standard Guy\\Documents\\GIFT_Test\\Scripts\\show_all_rules.sh"
+@commands = ARGV[3]
 
-# read commands from file
-script = File.open(@scriptPath, "r")
-@commands = script.read
-script.close
+@commands = showInputRules()
 
 begin
 	ssh = Net::SSH.start(@hostname, @username, :password => @password)
@@ -26,3 +23,14 @@ begin
 rescue
 	puts "Unable to connect to #{@hostname}"
 end
+
+# Show
+
+def showInputRules()
+   return "iptables -L INPUT --line-numbers -n"
+end
+
+# Add
+
+# Delete 
+
